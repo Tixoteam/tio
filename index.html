@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List premium & sewa</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <video class="background-video" autoplay loop muted>
+        <source src="https://files.catbox.moe/2ksmts.mp4" type="video/mp4">
+        Browser Anda tidak mendukung pemutaran video.
+    </video>
+    <div class="container" id="main-content">
+        <h2>Daftar Produk</h2>
+        <div id="product-list">
+            <!-- List produk akan dibuat secara dinamis -->
+        </div>
+        <div id="pagination-controls">
+            <button id="prev-page" disabled>&larr; Sebelumnya</button>
+            <button id="next-page">&rarr; Selanjutnya</button>
+        </div>
+    </div>
+
+    <div class="floating-qr" id="floating-qr">
+        <button class="close-icon" onclick="closeFloatingQR()">×</button>
+        <canvas id="floating-qrcode"></canvas>
+        <div class="qr-buttons">
+            <button id="download-btn">Download QR Code</button>
+            <button class="whatsapp-btn" id="whatsapp-btn">Konfirmasi via WhatsApp</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
